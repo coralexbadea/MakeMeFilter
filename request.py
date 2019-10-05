@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 """
-This file will make a simple request to the Flask API for URL processing.
+This file will make a simple request to the Flask API for email processing.
 """ 
 import argparse
 import requests

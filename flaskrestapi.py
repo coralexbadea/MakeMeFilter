@@ -81,9 +81,8 @@ def predict():
         incoming = flask.request.get_json()
         emails = []
         email = incoming["email"]
-
-        emails.append(email)
-
+        email_from = incoming["from"]
+       
 
         # Process and prepare the email.
         email_prepped = prepare_email(email)
@@ -105,7 +104,7 @@ def predict():
         prediction = prediction * 100
         
        
-        r = {"result": result, "percentage": prediction}
+        r = {"result": result, "percentage": prediction, "from": email_from}
         data["predictions"].append(r)
 
         # Show that the request was a success.

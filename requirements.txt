@@ -1,7 +1,7 @@
-numpy
-tensorflow
-keras
-pickle-mixin
-Flask
-nltk
-scikit-learn
+numpy=1.15.4
+tensorflow=1.14.0
+keras=2.2.4
+pickle-mixin=*
+Flask=*
+nltk=*
+scikit-learn=*

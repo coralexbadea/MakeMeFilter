@@ -1,9 +1,9 @@
-numpy ==1.15.4
-tensorflow==1.14.*
+numpy
+tensorflow
 keras==2.2.4
 pickle-mixin
 Flask==1.1.*
 nltk==3.4.*
 scikit-learn
-requests==2.20.1
+requests==2.20.*
 python-imap==1.0.0

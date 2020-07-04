@@ -2,16 +2,17 @@
 """
 This is the Flask REST API that processes and outputs the prediction on the email.
 """
+import tensorflow.compat.v1 as tf
 import numpy as np
 from keras.models import load_model
 from keras.models import model_from_json
-import tensorflow as tf
 import flask
 import json
 from sklearn.feature_extraction.text import CountVectorizer
 from nltk.corpus import stopwords
 import nltk
 import pickle
+tf.disable_v2_behavior() ;
 # Initialize our Flask application and the Keras model.
 app = flask.Flask(__name__)
 
@@ -20,7 +21,7 @@ app = flask.Flask(__name__)
 with open('model_in_json.json','r') as f:
     model_json = json.load(f)
 
-model = model_from_json(model_json)
+model = tf.keras.models.model_from_json(model_json)
 model.load_weights('model.h5')
 
 

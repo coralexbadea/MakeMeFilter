@@ -29,6 +29,7 @@ Activate the virtual environment:
    
 Make sure to install all requirements:
 
+    $ pip install --upgrade pip
     $ pip install -r requirements.txt
 
 

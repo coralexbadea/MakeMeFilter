@@ -19,7 +19,14 @@ This code was created with Python 3.6.7
 Enable imap usage in gmail account from Settings -> Forwarding and POP/IMAP
 
 Also activate the permission for less secure apps from https://myaccount.google.com/lesssecureapps?pli=1
+Create a new virtual environment by choosing a Python interpreter and making a ./venv directory to hold it: 
 
+    $ python3 -m venv --system-site-packages ./venv
+
+Activate the virtual environment:
+
+    $ source ./venv/bin/activate  # sh, bash, or zsh
+   
 Make sure to install all requirements:
 
     $ pip install -r requirements.txt

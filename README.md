@@ -28,11 +28,11 @@ Make sure to install all requirements:
 Quick start
 -----------
 
-Open a separate tab or window and run:
+Run the flask server:
 
     $ python3 flaskrestapi.py
 
-Now go back to the original tab or window and run:
+Perform a request for your account:
     
     $  python3 request.py -a <ACCOUNTNAME> -p <PASSWORD> -n 10 -t ALL 
 

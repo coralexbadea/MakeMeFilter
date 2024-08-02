@@ -1,6 +1,6 @@
 numpy
 tensorflow
-keras==2.2.4
+keras==2.13.1
 pickle-mixin
 Flask==1.1.*
 nltk==3.4.*
